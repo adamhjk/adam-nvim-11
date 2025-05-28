@@ -1,0 +1,16 @@
+require("which-key").add({
+	{ "<leader>f", group = "Find with Telescope" },
+	{ "<leader>t", "<cmd>Telescope find_files<cr>", desc = "Find Files" },
+	{ "<leader>b", "<cmd>Telescope buffers<cr>", desc = "Find buffers" },
+	{ "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find Files" },
+	{ "<leader>fb", "<cmd>Telescope buffers<cr>", desc = "Find buffers" },
+	{ "<leader>fi", "<cmd>Telescope current_buffer_fuzzy_find<cr>", desc = "Current buffer fuzzy find" },
+	{ "<leader>fd", "<cmd>Telescope find_diagnostics<cr>", desc = "Diagnostics" },
+	{ "<leader>fs", "<cmd>Telescope lsp_document_symbols<cr>", desc = "Document Symbols" },
+	{ "<leader>fw", "<cmd>Telescope lsp_workspace_symbols<cr>", desc = "Workspace Symbols" },
+	{ "<leader>fq", "<cmd>Telescope quick_fix<cr>", desc = "Quick Fix" },
+  { "grd", "<cmd>Telescope lsp_definitions<cr>", desc = "LSP Go to Definition", },
+	{ "grr", "<cmd>Telescope lsp_references<cr>", desc = "LSP References" },
+	{ "gri", "<cmd>Telescope lsp_implementations<cr>", desc = "LSP Implementation", },
+  { "<leader>gd", vim.lsp.buf.declaration, desc = "Go to LSP Declaration", },
+})
