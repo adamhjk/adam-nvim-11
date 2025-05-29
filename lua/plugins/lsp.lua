@@ -4,7 +4,7 @@ return {
 		'mason-org/mason-lspconfig.nvim',
 		dependencies = { 'neovim/nvim-lspconfig' },
 		opts = {
-			ensure_installed = { 'lua_ls', 'ts_ls', 'vue_ls', 'rust_analyzer' },
+			ensure_installed = { 'lua_ls', 'ts_ls', 'vue_ls', 'rust_analyzer', 'denols' },
 		},
 	},
 	-- neovim lua
