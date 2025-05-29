@@ -4,7 +4,7 @@ return {
 		'mason-org/mason-lspconfig.nvim',
 		dependencies = { 'neovim/nvim-lspconfig' },
 		opts = {
-			ensure_installed = { 'lua_ls', 'ts_ls', 'vue_ls', },
+			ensure_installed = { 'lua_ls', 'ts_ls', 'vue_ls', 'rust_analyzer', 'denols' },
 		},
 	},
 	-- neovim lua
@@ -49,7 +49,7 @@ return {
 			-- C-k: Toggle signature help (if signature.enabled = true)
 			--
 			-- See :h blink-cmp-config-keymap for defining your own keymap
-			keymap = { preset = 'super-tab' },
+			keymap = { preset = 'enter' },
 
 			appearance = {
 				-- 'mono' (default) for 'Nerd Font Mono' or 'normal' for 'Nerd Font'
