@@ -9,6 +9,7 @@ require("which-key").add({
 	{ "<leader>fs", "<cmd>Telescope lsp_document_symbols<cr>", desc = "Document Symbols" },
 	{ "<leader>fw", "<cmd>Telescope lsp_workspace_symbols<cr>", desc = "Workspace Symbols" },
 	{ "<leader>fq", "<cmd>Telescope quick_fix<cr>", desc = "Quick Fix" },
+	{ "<leader>fg", "<cmd>Telescope live_grep<cr>", desc = "Grep" },
   { "grd", "<cmd>Telescope lsp_definitions<cr>", desc = "LSP Go to Definition", },
 	{ "grr", "<cmd>Telescope lsp_references<cr>", desc = "LSP References" },
 	{ "gri", "<cmd>Telescope lsp_implementations<cr>", desc = "LSP Implementation", },
