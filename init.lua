@@ -46,6 +46,10 @@ vim.api.nvim_create_autocmd('LspAttach', {
       mode = mode or 'n'
       vim.keymap.set(mode, keys, func, { buffer = event.buf, desc = 'LSP: ' .. desc })
     end
+
+    -- Code actions
+    map('<leader>la', vim.lsp.buf.code_action, 'Code [A]ction')
+
     local client = vim.lsp.get_client_by_id(event.data.client_id)
     local function client_supports_method(method, bufnr)
       if vim.fn.has 'nvim-0.11' == 1 then

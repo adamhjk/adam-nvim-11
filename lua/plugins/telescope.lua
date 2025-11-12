@@ -9,7 +9,7 @@ return {
 		dependencies = { 'nvim-lua/plenary.nvim' },
 		opts = {
 			defaults = {
-				border = false,
+				border = true,
 			},
 		},
 	},
