@@ -5,12 +5,16 @@ return {
 	},
 	{
 		'nvim-telescope/telescope.nvim',
-		tag = '0.1.8',
+		branch = 'master',
 		dependencies = { 'nvim-lua/plenary.nvim' },
 		opts = {
 			defaults = {
 				border = true,
 			},
 		},
+		config = function(_, opts)
+			require("telescope").setup(opts)
+			require("telescope").load_extension("fzf")
+		end,
 	},
 }
